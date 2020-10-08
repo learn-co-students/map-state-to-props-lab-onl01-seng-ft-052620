@@ -33,6 +33,7 @@ describe('store', () => {
       const wrapper = mount(
         <Provider store={store}>
           <App />
+          {/* <UserInput /> */}
         </Provider>
       );
       expect(store.getState()).to.deep.equal({users: [{username: "Joey", hometown: "Brooklyn"}]});
